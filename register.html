@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Learn On Air</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2.0">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blob-1"></div>
+    <div class="blob-2"></div>
+    <div class="register-card">
+        <div class="logo">Learn<span>OnAir</span></div>
+        <p>Create an account to start learning today.</p>
+        <form action="register.php" method="POST">
+            <div class="input-group">
+                <input type="text" name="user_name" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" name="user_email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+                <input type="password" name="user_pass" placeholder="Create Password" required>
+            </div>
+            <div class="input-group select-wrapper">
+                <select name="study_field" required>
+                    <option value="" disabled selected>Select Your Field of Interest</option>
+                    <option value="data_science">Data Science</option>
+                    <option value="data_mining">Data Mining</option>
+                    <option value="data_analytics">Data Analytics</option>
+                    <option value="communication">Communication</option>
+                    <option value="interview_prep">Interview Preparation</option>
+                    <option value="web_dev">Web Development</option>
+                    <option value="business">Business & Management</option>
+                </select>
+            </div>
+            <input type="hidden" name="role" value="student">
+            <button type="submit" class="btn-register">Create Account</button>
+        </form>
+        <div class="login-link">
+            Already have an account? <a href="login.html">Login here</a>
+        </div>
+    </div>
+</body>
+
+</html>

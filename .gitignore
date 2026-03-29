@@ -1,0 +1,23 @@
+# Ignore user-uploaded media and files
+/uploads/videos/*
+/uploads/materials/*
+/uploads/assignments/*
+/uploads/certificates/*
+
+# Keep the directory structures intact even if empty
+!/uploads/videos/.gitkeep
+!/uploads/materials/.gitkeep
+!/uploads/assignments/.gitkeep
+!/uploads/certificates/.gitkeep
+
+# Ignore XAMPP/PHP IDE configurations and logs
+.vscode/
+.idea/
+*.log
+error_log
+.DS_Store
+Thumbs.db
+
+# Database exports (don't commit raw SQL dumps holding user passwords)
+*.sql
+/database/*.sql
